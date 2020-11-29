@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+/*Deleting default margins and paddings*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Alata';
+}
+
+h2 {
+    font-family: 'Alata';
+}
+
+h3 {
+    font-family: 'Alata';
+}
+
+p, label{
+    /*Adding botttom margins to paragraphs*/
+    margin-bottom: 20px;
+    font-family: 'Alata';
+}
+
+a {
+    font-family: 'Alata';
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    padding-top: 10px;
+    float: right; /* Bar navigation to right */
+}
+ 
+nav ul {
+    display: flex;
+    flex-direction: rows;
+    overflow: hidden; /* Cleaning float errors */
+}
+ 
+nav ul a {
+    float: right;
+    border-radius: 16px;
+    margin-right: 12px;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    border: solid black 1px;
+    font-weight: bold;
+}
+ 
+nav ul a:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p a {
+    text-decoration: none;
+    margin-right: 18px;
+    color: #008000;
+}
+
+.welcome {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.welcome h1{
+    text-align:center;
+    /*line-height: 20px;*/
+}
+
+
+.about-layout, .contact-layout {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    margin:0;
+}
+
+.portafolio{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.portafolio h2{
+    text-align:center;
+    color: #FFFFFF;
+    padding-left: 105px;
+    padding-right: 105px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: bold;
+}
+
+.portafolio div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 3px;
+}
+
+.projects {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+input[type=text] {
+    height: 15%;
+    vertical-align: top;
+}
+
+input {
+  width: 100%px;
+  height: 25px;
+}
